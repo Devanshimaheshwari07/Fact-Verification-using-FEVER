@@ -356,16 +356,77 @@ class VerificationEngine:
 
         components = self.preprocessor.extract_claim_components(claim_text)
         subject = components.get("subject", "")
+        entities = components.get("entities", [])
+        attr_tokens = components.get("attribute_tokens", set())
 
+        claim_ord_phrases = re.findall(
+            r'\b(first|second|third|fourth|fifth|last)\s+([a-zA-Z]+)\b',
+            claim_text,
+            re.IGNORECASE
+        )
+        claim_ord_phrases = [(o.lower(), n.lower()) for o, n in claim_ord_phrases]
+
+        # Pass 1: Confirmation check
+        # If any evidence sentence about the subject confirms the claim's ordinal assertion, there is NO contradiction
         for ev in retrieved_evidence:
-            if not self._is_sentence_about_subject(subject, ev):
+            if not self._is_sentence_about_subject(subject, ev, entities):
                 continue
+
+            ev_ord_phrases = re.findall(
+                r'\b(first|second|third|fourth|fifth|last)\s+([a-zA-Z]+)\b',
+                ev.text,
+                re.IGNORECASE
+            )
+            ev_ord_phrases = [(o.lower(), n.lower()) for o, n in ev_ord_phrases]
             ev_words = re.findall(r"\b[a-zA-Z]+\b", ev.text.lower())
             ev_ordinals = [w for w in ev_words if w in ORDINALS]
-            for c_ord in claim_ordinals:
-                for e_ord in ev_ordinals:
-                    if c_ord != e_ord:
-                        return (c_ord, e_ord, ev)
+
+            phrase_confirmed = False
+            for c_o, c_n in claim_ord_phrases:
+                if (c_o, c_n) in ev_ord_phrases:
+                    phrase_confirmed = True
+                    break
+            if phrase_confirmed:
+                return None
+
+            if not claim_ord_phrases and any(c_ord in ev_ordinals for c_ord in claim_ordinals):
+                ev_tokens = set(self.preprocessor.preprocess(ev.text))
+                if not attr_tokens or any(at in ev_tokens for at in attr_tokens):
+                    return None
+
+        # Pass 2: Conflict check
+        # An evidence sentence contradicts if it is about the subject AND asserts a conflicting ordinal for the subject
+        claim_tokens = set(self.preprocessor.preprocess(claim_text))
+        for ev in retrieved_evidence:
+            if not self._is_sentence_about_subject(subject, ev, entities):
+                continue
+
+            ev_ord_phrases = re.findall(
+                r'\b(first|second|third|fourth|fifth|last)\s+([a-zA-Z]+)\b',
+                ev.text,
+                re.IGNORECASE
+            )
+            ev_ord_phrases = [(o.lower(), n.lower()) for o, n in ev_ord_phrases]
+            ev_words = re.findall(r"\b[a-zA-Z]+\b", ev.text.lower())
+            ev_ordinals = [w for w in ev_words if w in ORDINALS]
+            if not ev_ordinals:
+                continue
+
+            for c_o, c_n in claim_ord_phrases:
+                for e_o, e_n in ev_ord_phrases:
+                    if c_n == e_n and c_o != e_o:
+                        return (c_o, e_o, ev)
+
+            ev_tokens = set(self.preprocessor.preprocess(ev.text))
+            shared = claim_tokens.intersection(ev_tokens)
+            if len(shared) >= 2:
+                for c_ord in claim_ordinals:
+                    for e_ord in ev_ordinals:
+                        if c_ord != e_ord:
+                            if e_ord == 'first' and re.search(r'\bfirst\s+(?:people|two|three|humans)\b', ev.text, re.IGNORECASE):
+                                continue
+                            return (c_ord, e_ord, ev)
+
         return None
 
     def _check_negation_contradiction(
