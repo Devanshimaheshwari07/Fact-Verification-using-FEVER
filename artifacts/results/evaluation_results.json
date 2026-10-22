@@ -1,0 +1,176 @@
+{
+  "dataset_split": "dev",
+  "num_claims": 12,
+  "timestamp": "2026-10-19 15:11:49",
+  "ir_comparison": {
+    "bm25": {
+      "precision@1": 0.7778,
+      "recall@1": 0.6667,
+      "ndcg@1": 0.7778,
+      "precision@3": 0.3704,
+      "recall@3": 0.9444,
+      "ndcg@3": 0.8661,
+      "precision@5": 0.2222,
+      "recall@5": 0.9444,
+      "ndcg@5": 0.8661,
+      "precision@10": 0.1111,
+      "recall@10": 0.9444,
+      "ndcg@10": 0.8661,
+      "mrr": 0.8889,
+      "mean_latency_ms": 0.31,
+      "p95_latency_ms": 0.87
+    },
+    "tfidf": {
+      "precision@1": 0.6667,
+      "recall@1": 0.6111,
+      "ndcg@1": 0.6667,
+      "precision@3": 0.3704,
+      "recall@3": 0.9444,
+      "ndcg@3": 0.8409,
+      "precision@5": 0.2222,
+      "recall@5": 0.9444,
+      "ndcg@5": 0.8409,
+      "precision@10": 0.1111,
+      "recall@10": 0.9444,
+      "ndcg@10": 0.8409,
+      "mrr": 0.8333,
+      "mean_latency_ms": 1.43,
+      "p95_latency_ms": 5.48
+    },
+    "boolean": {
+      "precision@1": 0.8889,
+      "recall@1": 0.7778,
+      "ndcg@1": 0.8889,
+      "precision@3": 0.3704,
+      "recall@3": 0.9444,
+      "ndcg@3": 0.916,
+      "precision@5": 0.2222,
+      "recall@5": 0.9444,
+      "ndcg@5": 0.916,
+      "precision@10": 0.1222,
+      "recall@10": 1.0,
+      "ndcg@10": 0.9387,
+      "mrr": 0.9444,
+      "mean_latency_ms": 0.69,
+      "p95_latency_ms": 1.2
+    },
+    "hybrid": {
+      "precision@1": 0.7778,
+      "recall@1": 0.7222,
+      "ndcg@1": 0.7778,
+      "precision@3": 0.3704,
+      "recall@3": 0.9444,
+      "ndcg@3": 0.8819,
+      "precision@5": 0.2222,
+      "recall@5": 0.9444,
+      "ndcg@5": 0.8819,
+      "precision@10": 0.1111,
+      "recall@10": 0.9444,
+      "ndcg@10": 0.8819,
+      "mrr": 0.8889,
+      "mean_latency_ms": 0.94,
+      "p95_latency_ms": 1.59
+    }
+  },
+  "verification_bm25": {
+    "classification": {
+      "accuracy": 0.8333,
+      "macro_f1": 0.8302,
+      "weighted_f1": 0.8329,
+      "per_class": {
+        "SUPPORTS": {
+          "precision": 0.7143,
+          "recall": 1.0,
+          "f1_score": 0.8333,
+          "support": 5
+        },
+        "REFUTES": {
+          "precision": 1.0,
+          "recall": 0.75,
+          "f1_score": 0.8571,
+          "support": 4
+        },
+        "NOT ENOUGH INFO": {
+          "precision": 1.0,
+          "recall": 0.6667,
+          "f1_score": 0.8,
+          "support": 3
+        }
+      },
+      "confusion_matrix": [
+        [5, 0, 0],
+        [1, 3, 0],
+        [1, 0, 2]
+      ],
+      "labels": [
+        "SUPPORTS",
+        "REFUTES",
+        "NOT ENOUGH INFO"
+      ],
+      "classification_report_text": "                 precision    recall  f1-score   support\n\n       SUPPORTS       0.71      1.00      0.83         5\n        REFUTES       1.00      0.75      0.86         4\nNOT ENOUGH INFO       1.00      0.67      0.80         3\n\n       accuracy                           0.83        12\n      macro avg       0.90      0.81      0.83        12\n   weighted avg       0.88      0.83      0.83        12\n"
+    },
+    "fever_benchmark": {
+      "total_claims": 12,
+      "verifiable_claims": 9,
+      "label_accuracy": 0.8333,
+      "evidence_recall": 0.8889,
+      "fever_score": 0.8333,
+      "label_correct_count": 10,
+      "fever_correct_count": 10
+    },
+    "error_analysis": {
+      "counts": {
+        "retrieval_failure": 1,
+        "verification_failure": 1,
+        "polarity_confusion": 1,
+        "spurious_verdict_on_nei": 1,
+        "false_nei": 0,
+        "correct_fever_claims": 10,
+        "total_evaluated": 12
+      },
+      "sample_cases": {
+        "retrieval_failure": [
+          {
+            "claim_id": 4002,
+            "claim": "The Enigma machine was cracked by American cryptanalysts in Washington.",
+            "gold_label": "REFUTES",
+            "predicted_label": "SUPPORTS",
+            "retrieved_count": 5,
+            "evidence_satisfied": false
+          }
+        ],
+        "verification_failure": [
+          {
+            "claim_id": 4006,
+            "claim": "Francis Ford Coppola refused to watch early test screenings of The Godfather.",
+            "gold_label": "NOT ENOUGH INFO",
+            "predicted_label": "SUPPORTS",
+            "retrieved_count": 5,
+            "evidence_satisfied": true
+          }
+        ],
+        "polarity_confusion": [
+          {
+            "claim_id": 4002,
+            "claim": "The Enigma machine was cracked by American cryptanalysts in Washington.",
+            "gold_label": "REFUTES",
+            "predicted_label": "SUPPORTS",
+            "retrieved_count": 5,
+            "evidence_satisfied": false
+          }
+        ],
+        "spurious_verdict_on_nei": [
+          {
+            "claim_id": 4006,
+            "claim": "Francis Ford Coppola refused to watch early test screenings of The Godfather.",
+            "gold_label": "NOT ENOUGH INFO",
+            "predicted_label": "SUPPORTS",
+            "retrieved_count": 5,
+            "evidence_satisfied": true
+          }
+        ],
+        "false_nei": []
+      }
+    }
+  }
+}

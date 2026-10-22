@@ -1,0 +1,18 @@
+{"id": 4001, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Jaime Lannister was portrayed by Nikolaj Coster-Waldau in Game of Thrones.", "evidence": [[[29, 25, "Nikolaj_Coster-Waldau", 3]]]}
+{"id": 4002, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "The Enigma machine was cracked by American cryptanalysts in Washington.", "evidence": [[[30, 26, "Alan_Turing", 3], [30, 27, "Alan_Turing", 4]]]}
+{"id": 4003, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Michael Collins flew the command module Columbia alone in lunar orbit.", "evidence": [[[31, 28, "Apollo_11", 4]]]}
+{"id": 4004, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Albert Einstein won his Nobel Prize in Physics in the year 1950.", "evidence": [[[32, 29, "Albert_Einstein", 3]]]}
+{"id": 4005, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "The elevation of Mount Everest was officially measured as 8,848.86 m in 2020.", "evidence": [[[33, 30, "Mount_Everest", 2]]]}
+{"id": 4006, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Francis Ford Coppola refused to watch early test screenings of The Godfather.", "evidence": [[[34, null, null, null]]]}
+{"id": 4007, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Organisms that perform photosynthesis include plants, algae, and cyanobacteria.", "evidence": [[[35, 31, "Photosynthesis", 3]]]}
+{"id": 4008, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Romulus Augustulus founded the Pax Romana in 117 AD.", "evidence": [[[36, 32, "Roman_Empire", 2], [36, 33, "Roman_Empire", 4]]]}
+{"id": 4009, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Pierre Curie and Marie Curie won the Nobel Prize in Physics together.", "evidence": [[[37, 34, "Marie_Curie", 2]]]}
+{"id": 4010, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "DNA helices were first observed using ultraviolet microscopy in Cambridge.", "evidence": [[[38, null, null, null]]]}
+{"id": 4011, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Neil Armstrong and Buzz Aldrin explored the Moon for ten consecutive hours.", "evidence": [[[39, 35, "Apollo_11", 3]]]}
+{"id": 4012, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Alan Turing preferred cycling rather than walking to Bletchley Park.", "evidence": [[[40, null, null, null]]]}
+{"id": 4013, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "The Eiffel Tower is located in London.", "evidence": [[[41, 36, "Eiffel_Tower", 0], [41, 37, "London", 4]]]}
+{"id": 4014, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "The Eiffel Tower was built as the centerpiece of the 1889 World's Fair in Paris.", "evidence": [[[42, 38, "Eiffel_Tower", 0], [42, 39, "Eiffel_Tower", 2]]]}
+{"id": 4015, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "The Colosseum was built by the Roman Emperor Nero in 200 AD.", "evidence": [[[43, 40, "Colosseum", 2]]]}
+{"id": 4016, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Nikolaj Coster-Waldau adheres to a strict vegan diet.", "evidence": [[[44, null, null, null]]]}
+{"id": 4017, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Neil Armstrong was an accomplished watercolor painter.", "evidence": [[[45, null, null, null]]]}
+{"id": 4018, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Marie Curie owned three Persian cats in her Paris laboratory.", "evidence": [[[46, null, null, null]]]}

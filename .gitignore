@@ -1,0 +1,36 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+venv/
+env/
+.venv/
+
+# Large datasets & raw data downloads (keep samples versioned or in sample dir)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Index & Model Artifacts (can be rebuilt)
+artifacts/indexes/*
+!artifacts/indexes/.gitkeep
+artifacts/models/*
+!artifacts/models/.gitkeep
+
+# SQLite local database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE & OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

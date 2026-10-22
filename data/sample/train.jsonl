@@ -1,0 +1,44 @@
+{"id": 1001, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Nikolaj Coster-Waldau worked with the Fox Broadcasting Company.", "evidence": [[[1, 1, "Nikolaj_Coster-Waldau", 4], [1, 2, "Nikolaj_Coster-Waldau", 5]]]}
+{"id": 1002, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Alan Turing was an English mathematician who broke German codes at Bletchley Park.", "evidence": [[[2, 3, "Alan_Turing", 0], [2, 4, "Alan_Turing", 3]]]}
+{"id": 1003, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Neil Armstrong was the commander of the Apollo 11 mission.", "evidence": [[[3, 5, "Apollo_11", 1]]]}
+{"id": 1004, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Albert Einstein developed the theory of relativity.", "evidence": [[[4, 6, "Albert_Einstein", 1]]]}
+{"id": 1005, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "The first confirmed ascent of Mount Everest was achieved by Sir Edmund Hillary.", "evidence": [[[5, 7, "Mount_Everest", 4]]]}
+{"id": 1006, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "The Godfather won the Academy Award for Best Picture.", "evidence": [[[6, 8, "The_Godfather", 4]]]}
+{"id": 1007, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Photosynthesis produces oxygen as a waste product.", "evidence": [[[7, 9, "Photosynthesis", 2]]]}
+{"id": 1008, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "The Roman Empire reached its maximum territorial extent under Emperor Trajan.", "evidence": [[[8, 10, "Roman_Empire", 3]]]}
+{"id": 1009, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Marie Curie won Nobel Prizes in two different scientific fields.", "evidence": [[[9, 11, "Marie_Curie", 1]]]}
+{"id": 1010, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "James Watson and Francis Crick published the double-helix structure of DNA in 1953.", "evidence": [[[10, 12, "DNA", 4]]]}
+{"id": 1011, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "The Eiffel Tower is located in Paris, France.", "evidence": [[[11, 13, "Eiffel_Tower", 0]]]}
+{"id": 1012, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "The Statue of Liberty is located on Liberty Island in New York City.", "evidence": [[[12, 14, "Statue_of_Liberty", 0]]]}
+{"id": 1013, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "The Taj Mahal was commissioned by Shah Jahan in Agra, India.", "evidence": [[[13, 15, "Taj_Mahal", 0], [13, 16, "Taj_Mahal", 1]]]}
+{"id": 1014, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Isaac Newton formulated the laws of motion and universal gravitation.", "evidence": [[[14, 17, "Isaac_Newton", 3]]]}
+{"id": 1015, "verifiable": "VERIFIABLE", "label": "SUPPORTS", "claim": "Leonardo da Vinci painted the Mona Lisa.", "evidence": [[[15, 18, "Leonardo_da_Vinci", 2]]]}
+{"id": 2001, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Nikolaj Coster-Waldau graduated from Harvard University in 1993.", "evidence": [[[16, 19, "Nikolaj_Coster-Waldau", 1]]]}
+{"id": 2002, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Alan Turing died of natural causes in 1990.", "evidence": [[[17, 20, "Alan_Turing", 6]]]}
+{"id": 2003, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Buzz Aldrin was the first person to step on the Moon during Apollo 11.", "evidence": [[[18, 21, "Apollo_11", 2]]]}
+{"id": 2004, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Albert Einstein received the Nobel Prize in Physics for developing quantum mechanics.", "evidence": [[[19, 22, "Albert_Einstein", 3]]]}
+{"id": 2005, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Mount Everest is located entirely within the borders of India.", "evidence": [[[20, 23, "Mount_Everest", 0], [20, 24, "Mount_Everest", 1]]]}
+{"id": 2006, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "The Godfather was directed by Steven Spielberg.", "evidence": [[[21, 25, "The_Godfather", 0]]]}
+{"id": 2007, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Photosynthesis is a process that consumes oxygen to produce carbon dioxide.", "evidence": [[[22, 26, "Photosynthesis", 1], [22, 27, "Photosynthesis", 2]]]}
+{"id": 2008, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "The Western Roman Empire fell in the 15th century.", "evidence": [[[23, 28, "Roman_Empire", 4]]]}
+{"id": 2009, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Marie Curie was born in Berlin, Germany.", "evidence": [[[24, 29, "Marie_Curie", 0]]]}
+{"id": 2010, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "DNA is composed of three polynucleotide chains forming a triple helix.", "evidence": [[[25, 30, "DNA", 0]]]}
+{"id": 2011, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "The Eiffel Tower is located in London.", "evidence": [[[26, 31, "Eiffel_Tower", 0], [26, 32, "London", 4]]]}
+{"id": 2012, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "The Colosseum was built in Madrid, Spain.", "evidence": [[[27, 33, "Colosseum", 0], [27, 34, "Colosseum", 4]]]}
+{"id": 2013, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "The Statue of Liberty was a gift from the government of Italy.", "evidence": [[[28, 35, "Statue_of_Liberty", 1]]]}
+{"id": 2014, "verifiable": "VERIFIABLE", "label": "REFUTES", "claim": "Mars is the closest planet to the Sun.", "evidence": [[[29, 36, "Mars", 0]]]}
+{"id": 3001, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Nikolaj Coster-Waldau prefers acting in comedies over fantasy television series.", "evidence": [[[30, null, null, null]]]}
+{"id": 3002, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Alan Turing was an avid chess player throughout his childhood.", "evidence": [[[31, null, null, null]]]}
+{"id": 3003, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Neil Armstrong listened to classical music during the Apollo 11 lunar descent.", "evidence": [[[32, null, null, null]]]}
+{"id": 3004, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Albert Einstein often played the violin when contemplating mathematical problems.", "evidence": [[[33, null, null, null]]]}
+{"id": 3005, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Climbing Mount Everest requires five months of intensive high-altitude training.", "evidence": [[[34, null, null, null]]]}
+{"id": 3006, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "The Godfather is Marlon Brando's favorite film among all his starring roles.", "evidence": [[[35, null, null, null]]]}
+{"id": 3007, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Ancient Romans celebrated Trajan's victory with three weeks of public games.", "evidence": [[[36, null, null, null]]]}
+{"id": 3008, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Marie Curie frequently corresponded with British scientists about radiation risks.", "evidence": [[[37, null, null, null]]]}
+{"id": 3009, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Gustave Eiffel intended for the Eiffel Tower to be painted bright blue.", "evidence": [[[38, null, null, null]]]}
+{"id": 3010, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Shah Jahan personally designed the decorative gardens surrounding the Taj Mahal.", "evidence": [[[39, null, null, null]]]}
+{"id": 3011, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Nikolaj Coster-Waldau is a vegan.", "evidence": [[[40, null, null, null]]]}
+{"id": 3012, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Alan Turing had an extensive collection of rare postage stamps.", "evidence": [[[41, null, null, null]]]}
+{"id": 3013, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Neil Armstrong was fluent in conversational Italian.", "evidence": [[[42, null, null, null]]]}
+{"id": 3014, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Albert Einstein owned three sailboats in Switzerland.", "evidence": [[[43, null, null, null]]]}
+{"id": 3015, "verifiable": "NOT VERIFIABLE", "label": "NOT ENOUGH INFO", "claim": "Leonardo da Vinci kept a pet monkey in Florence.", "evidence": [[[44, null, null, null]]]}
